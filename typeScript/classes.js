@@ -1,3 +1,7 @@
+// interface Book {
+//   name: string;
+//   pages: number;
+// }
 var BookInfo = /** @class */ (function () {
     function BookInfo(name, pages) {
         this.name = name;
