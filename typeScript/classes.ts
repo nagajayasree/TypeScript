@@ -3,16 +3,27 @@
 //   pages: number;
 // }
 
-class BookInfo {
+class Book {
+  //this Book is class
   name: string;
   pages: number;
+  isOpen: boolean;
 
-  constructor(name, pages) {
+  open() {
+    console.log(this.isOpen);
+  }
+
+  constructor(name, pages, isOpen) {
     this.name = name;
     this.pages = pages;
+    this.isOpen = isOpen;
   }
 }
 
-const book = new BookInfo("Learn TS", 45);
+//this book is an obj
+const book: Book = new Book("Learn js", 45, false);
 console.log(book);
-console.log(BookInfo);
+console.log(Book);
+
+let book2 = new Book("Learn ts", 78, true);
+book2.open();
