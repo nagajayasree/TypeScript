@@ -1,18 +1,18 @@
-interface Book {
-  name: string;
-  pages: number;
-}
+// interface Book {
+//   name: string;
+//   pages: number;
+// }
 
 class BookInfo {
   name: string;
   pages: number;
 
-  constructor(name: string, pages: number) {
+  constructor(name, pages) {
     this.name = name;
     this.pages = pages;
   }
 }
 
-const book: Book = new BookInfo("Learn TS", 45);
+const book = new BookInfo("Learn TS", 45);
 console.log(book);
 console.log(BookInfo);
