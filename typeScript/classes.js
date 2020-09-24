@@ -2,13 +2,20 @@
 //   name: string;
 //   pages: number;
 // }
-var BookInfo = /** @class */ (function () {
-    function BookInfo(name, pages) {
+var Book = /** @class */ (function () {
+    function Book(name, pages, isOpen) {
         this.name = name;
         this.pages = pages;
+        this.isOpen = isOpen;
     }
-    return BookInfo;
+    Book.prototype.open = function () {
+        console.log(this.isOpen);
+    };
+    return Book;
 }());
-var book = new BookInfo("Learn TS", 45);
+//this book is an obj
+var book = new Book("Learn js", 45, false);
 console.log(book);
-console.log(BookInfo);
+console.log(Book);
+var book2 = new Book("Learn ts", 78, true);
+book2.open();
