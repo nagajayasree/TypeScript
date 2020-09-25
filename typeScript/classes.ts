@@ -12,18 +12,13 @@ class Book {
   open() {
     console.log(this.isOpen);
   }
-
-  constructor(name, pages, isOpen) {
-    this.name = name;
-    this.pages = pages;
-    this.isOpen = isOpen;
-  }
 }
 
 //this book is an obj
-const book: Book = new Book("Learn js", 45, false);
+const book: Book = new Book();
+book.name = "Learn js";
+book.pages = 56;
+book.isOpen = false;
 console.log(book);
 console.log(Book);
-
-let book2 = new Book("Learn ts", 78, true);
-book2.open();
+book.open();
