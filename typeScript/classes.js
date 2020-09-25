@@ -3,10 +3,7 @@
 //   pages: number;
 // }
 var Book = /** @class */ (function () {
-    function Book(name, pages, isOpen) {
-        this.name = name;
-        this.pages = pages;
-        this.isOpen = isOpen;
+    function Book() {
     }
     Book.prototype.open = function () {
         console.log(this.isOpen);
@@ -14,8 +11,10 @@ var Book = /** @class */ (function () {
     return Book;
 }());
 //this book is an obj
-var book = new Book("Learn js", 45, false);
+var book = new Book();
+book.name = "Learn js";
+book.pages = 56;
+book.isOpen = false;
 console.log(book);
 console.log(Book);
-var book2 = new Book("Learn ts", 78, true);
-book2.open();
+book.open();
