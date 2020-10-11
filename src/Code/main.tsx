@@ -8,6 +8,7 @@ const Main = () => (
     <GetName Name="jay" />
     <GetLastName lastName="ramaka" />
     <Title title="Learn typescript with react">Hello typescript</Title>
+    <Comp name="hari" />
   </div>
 );
 
