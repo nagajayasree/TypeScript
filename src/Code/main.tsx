@@ -1,5 +1,6 @@
 import * as React from "react";
 import { GetLastName, GetName, Msg, Name, Title } from "./funcComp";
+import Comp from "./stateComp";
 
 const Main = () => (
   <div>
