@@ -1,7 +1,8 @@
 import * as React from "react";
 import { GetLastName, GetName, Msg, Name, Title } from "./funcComp";
 import Comp from "./stateComp";
-import {Greet,Wish,Play,Activity} from "./defProps";
+import { Greet, Wish, Play, Activity } from "./defProps";
+import Counter from "./Counter/tsxCounter";
 
 const Main = () => (
   <div>
@@ -15,6 +16,7 @@ const Main = () => (
     <Wish />
     <Play />
     <Activity work={"jump"} />
+    <Counter name={"TS Counter"} />
   </div>
 );
 
