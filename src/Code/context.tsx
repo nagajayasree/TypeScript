@@ -16,16 +16,9 @@ const samplePersonContext: PersonContextInterface = {
 
 export const Person = () => (
   <PersonContext.Provider value={samplePersonContext}>
+    <PersonInfo/>
   </PersonContext.Provider>
 );
 
-// export const PersonInfo = () => {
-//   const prsnContext = React.useContext(PersonContext);
-//   return (
-//     <div>
-//       Name:{prsnContext?.name},Age:{prsnContext?.age},Id:{prsnContext?.id}
-//     </div>
-//   );
-// };
 
 export default PersonContext;
