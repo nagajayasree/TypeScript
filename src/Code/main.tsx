@@ -3,6 +3,7 @@ import { GetLastName, GetName, Msg, Name, Title } from "./funcComp";
 import Comp from "./stateComp";
 import { Greet, Wish, Play, Activity } from "./defProps";
 import Counter from "./Counter/tsxCounter";
+import { Person } from "./context";
 
 const Main = () => (
   <div>
@@ -17,6 +18,7 @@ const Main = () => (
     <Play />
     <Activity work={"jump"} />
     <Counter name={"TS Counter"} />
+    <Person />
   </div>
 );
 
