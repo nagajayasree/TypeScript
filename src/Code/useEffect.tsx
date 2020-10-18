@@ -32,9 +32,12 @@ const UseEffectComp: React.FC<Props> = ({}) => {
     console.log(`Any state changed Name: ${name},Address:${address}`);
   });
 
-  React.useEffect(() => {
-    console.log(`Name Changed: ${name}`);
-  }, [name]);
+   React.useEffect(() => {
+    if (name || address) {
+      console.log(`Name Changed: ${name}`);
+      console.log(`Address Changed:${address}`);
+    }
+  }, [name, address]);
 
   return (
     <form onSubmit={handleSubmit}>
