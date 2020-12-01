@@ -13,3 +13,15 @@ export const Users: React.FC<{
     </div>
   );
 };
+
+export const PersonDetails: React.FC<{
+  persons: [{ id: number }, { name: string }];
+}> = ({ persons }) => {
+  return (
+    <div>
+      {Object.keys(persons).map((key) => (
+        <div>{key}</div>
+      ))}
+    </div>
+  );
+};
