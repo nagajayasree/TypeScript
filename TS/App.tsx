@@ -9,6 +9,7 @@ function App() {
       <Welcome message="Welcome to TypeScript!" />
       <WelcomeUser user="js" />
       <WelcomeMessage firstName="FirstName" />
+      <PersonDetails persons={[{ id: 1 }, { name: "kjdsp" }]} />
     </div>
   );
 }
