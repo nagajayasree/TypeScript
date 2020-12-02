@@ -9,7 +9,12 @@ function App() {
       <Welcome message="Welcome to TypeScript!" />
       <WelcomeUser user="js" />
       <WelcomeMessage firstName="FirstName" />
-      <PersonDetails persons={[{ id: 1 }, { name: "kjdsp" }]} />
+      <PersonDetails persons={[{ id: 1, name: "kjdsp" }]} />
+      <Text text="hello" />
+      <InputField2 msg="inputfield2" />
+      <DisplayMsg greet={"Greet"} />
+      <Greet msg={"Message"} />
+      <GetMsg msg={"Msg"} />
     </div>
   );
 }
