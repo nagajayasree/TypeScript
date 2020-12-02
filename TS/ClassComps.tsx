@@ -48,3 +48,25 @@ export class GetMsg extends React.Component<GetMsgProps, GetMsgState> {
     );
   }
 }
+
+
+export interface PlayerState {
+  firstScore: number;
+  secondScore: number;
+}
+
+class Player extends React.Component<PlayerProps, PlayerState> {
+  constructor(props: PlayerProps) {
+    super(props);
+    this.state = { firstScore: 10, secondScore: 41 };
+  }
+  render() {
+    return (
+      <div>
+        Avg Score:{(this.state.firstScore + this.state.secondScore) / 2}
+      </div>
+    );
+  }
+}
+
+export default Player;
