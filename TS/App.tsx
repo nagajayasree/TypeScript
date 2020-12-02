@@ -1,6 +1,11 @@
 import React from "react";
 import "./App.css";
+import Message from "./TS/Message";
+import { Rating, Result, Ticketing, Tickets } from "./TS/Ticketing";
 import Welcome, { WelcomeMessage, WelcomeUser } from "./TS/Welcome";
+import { PersonDetails, Users } from "./TS/Lists";
+import { InputField2, Text } from "./TS/InputField";
+import Player, { DisplayMsg, Greet, GetMsg } from "./TS/ClassComps";
 
 function App() {
   return (
@@ -15,6 +20,7 @@ function App() {
       <DisplayMsg greet={"Greet"} />
       <Greet msg={"Message"} />
       <GetMsg msg={"Msg"} />
+      <Player name="John" />
     </div>
   );
 }
