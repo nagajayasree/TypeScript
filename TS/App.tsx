@@ -6,7 +6,7 @@ import Welcome, { WelcomeMessage, WelcomeUser } from "./TS/Welcome";
 import { PersonDetails, Users } from "./TS/Lists";
 import { InputField2, Text } from "./TS/InputField";
 import Player, { DisplayMsg, Greet, GetMsg } from "./TS/ClassComps";
-import MathOps from "./TS/MathOps";
+import { MathOps, Add } from "./TS/MathOps";
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
       <GetMsg msg={"Msg"} />
       <Player name="John" />
       <MathOps operation="sub" />
+      <Add c={6} />
     </div>
   );
 }
