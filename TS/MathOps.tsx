@@ -28,3 +28,19 @@ class MathOps extends React.Component<MathOpsProps, MathOpsState> {
 }
 
 export default MathOps;
+
+export class Add extends React.Component<MathOpsProps, MathOpsState> {
+  constructor(props: MathOpsProps) {
+    super(props);
+    this.state = { a: 24, b: 4 };
+  }
+  render() {
+    return (
+      <>
+        <div>
+          The total is: {this.state.a + this.state.b} + {this.props.c}
+        </div>
+      </>
+    );
+  }
+}
