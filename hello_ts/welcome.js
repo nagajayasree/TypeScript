@@ -20,3 +20,14 @@ function ticket(age) {
     }
 }
 ticket(22);
+function concate(a, b) {
+    console.log(a + b);
+}
+concate("t", "s");
+function getSize(word) {
+    console.log(word.length);
+    var len = word.length;
+    document.write(len);
+    return len;
+}
+getSize("hello");
