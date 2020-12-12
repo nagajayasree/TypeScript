@@ -17,3 +17,17 @@ function ticket(age: number) {
   }
 }
 ticket(22);
+
+function concate(a: string, b: string) {
+  console.log(a + b);
+}
+concate("t", "s");
+
+function getSize(word: string): number {
+  console.log(word.length);
+  let len = word.length;
+  document.write(len);
+  return len;
+}
+
+getSize("hello");
