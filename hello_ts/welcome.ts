@@ -31,3 +31,16 @@ function getSize(word: string): number {
 }
 
 getSize("hello");
+
+let changeUpCase = function (x: string): string {
+  console.log(x.toUpperCase());
+  document.write(x.toUpperCase());
+  return x.toUpperCase();
+};
+changeUpCase("lowercase");
+
+let changeLowCase: (y: string) => string = function (y: string): string {
+  document.write(y.toUpperCase());
+  return y.toLowerCase();
+};
+changeLowCase("uppercase");
