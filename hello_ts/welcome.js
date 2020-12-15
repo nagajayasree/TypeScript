@@ -31,3 +31,15 @@ function getSize(word) {
     return len;
 }
 getSize("hello");
+var changeUpCase = function (x) {
+    console.log(x.toUpperCase());
+    document.write(x.toUpperCase());
+    return x.toUpperCase();
+};
+changeUpCase("lowercase");
+var changeLowCase = function (y) {
+    document.write(y.toUpperCase());
+    return y.toLowerCase();
+};
+changeLowCase("uppercase");
+
