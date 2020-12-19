@@ -6,9 +6,7 @@ function showDirection(directions) {
 var directions = ["e", "w", "n", "s"];
 myButton.innerHTML = "Show Direction";
 document.body.appendChild(myButton);
-myButton.addEventListener("click", function (e) {
-    showDirection(directions);
-});
+myButton.addEventListener("click", function (e) { return showDirection(directions); });
 // const button = document.createElement("button");
 // window.document.appendChild(button);
 // document.body.appendChild(button);
