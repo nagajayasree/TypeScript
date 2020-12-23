@@ -7,7 +7,6 @@ function sqEveryDigit(number) {
         digits.push(square);
     }
     var result = digits.join(" ");
-    console.log(typeof result);
     console.log(result);
 }
 sqEveryDigit(121);
