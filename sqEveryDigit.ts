@@ -6,8 +6,8 @@ function sqEveryDigit(number) {
     let square = numStr[i] * numStr[i];
     digits.push(square);
   }
-  let result = digits.join(" ");
-  console.log(result);
+  let result = digits.join("");
+  console.log(parseInt(result));
 }
 
 sqEveryDigit(121);
